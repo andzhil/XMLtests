@@ -15,10 +15,10 @@ public class BooksTest {
 
     @Test
     public void testMethod() throws JAXBException {
-        Marshaller marshaller = this.context.createMarshaller();
-        Books books = new Books(new Book("The Mist", "Stephen King", 1990));
-        books.addBook(new Book("Fathers and Children", "Turgenev", 1850));
-        marshaller.marshal(books, new File("Books.xml"));
+        //Marshaller marshaller = this.context.createMarshaller();
+        //Books books = new Books(new Book("The Mist", "Stephen King", 1990));
+        //books.addBook(new Book("Fathers and Children", "Turgenev", 1850));
+        //marshaller.marshal(books, new File("Books.xml"));
 
         Unmarshaller unmarshaller = this.context.createUnmarshaller();
         System.out.println(unmarshaller.unmarshal(new File("Books.xml")));
