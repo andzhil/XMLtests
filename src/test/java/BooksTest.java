@@ -22,6 +22,10 @@ public class BooksTest {
 
         Unmarshaller unmarshaller = this.context.createUnmarshaller();
         System.out.println(unmarshaller.unmarshal(new File("Books.xml")));
+        Books books = (Books)unmarshaller.unmarshal(new File("Books.xml"));
+        for (Book book : books.getBooks()) {
+            System.out.println(book.toString());
+        }
     }
 
 }

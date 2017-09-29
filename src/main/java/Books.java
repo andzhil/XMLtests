@@ -16,6 +16,10 @@ public class Books {
         this.onebook.add(book);
     }
 
+    ArrayList<Book> getBooks() {
+        return onebook;
+    }
+
     public void addBook(Book book) {
         this.onebook.add(book);
     }
